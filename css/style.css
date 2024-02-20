@@ -465,11 +465,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     padding-bottom: 0px;
 }
 
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
     .section-header p {
         width: 70%;
     }
-}
+} */
 
 
 
@@ -643,22 +643,26 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* -------- Services CSS ------- */
 /* ============================= */
 
-.services {
+.services,
+.portfolio {
     margin-top: -60px;
     padding: 60px 0;
     text-align: center;
     background: #ffffff;
 }
 
-.services .section-header {
+.services .section-header,
+.portfolio .section-header {
     text-align: center;
 }
 
-.services .section-header p {
+.services .section-header p,
+.portfolio .section-header p {
     margin:0;
 }
 
-.services .single-service {
+.services .single-service,
+.portfolio .single-service {
     position: relative;
     text-align: center;
     font-weight: 300;
@@ -667,7 +671,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: #e9ecef;
 }
 
-.services .single-service::before {
+.services .single-service::before,
+.portfolio .single-service::before {
     position: absolute;
     content: "";
     height: 3px;
@@ -677,7 +682,8 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: #AF9483;
 }
 
-.services .single-service::after {
+.services .single-service::after,
+.portfolio .single-service::after {
     position: absolute;
     content: "";
     height: 3px;
@@ -687,17 +693,20 @@ body.mobile-nav-active #mobile-nav-toggle {
     background: #AF9483;
 }
 
-.services .single-service:hover::before {
+.services .single-service:hover::before,
+.portfolio .single-service:hover::before {
     transition: .3s;
     right: 0;
 }
 
-.services .single-service:hover::after {
+.services .single-service:hover::after,
+.portfolio .single-service:hover::after {
     transition: .3s;
     left: 0;
 }
 
-.services .single-service .service-icon {
+.services .single-service .service-icon,
+.portfolio .single-service .service-icon {
     font-size: 60px;
     line-height: 60px;
     margin: 0 auto 20px;
@@ -707,7 +716,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .services .single-service h4,
-.services .single-service h4 a {
+.services .single-service h4 a,
+.portfolio .single-service h4,
+.portfolio .single-service h4 a {
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -716,11 +727,13 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-bottom: 10px;
 }
 
-.services .single-service p {
+.services .single-service p,
+.portfolio .single-service p {
     margin-bottom: 0;
 }
 
-.services .single-service span {
+.services .single-service span,
+.portfolio .single-service span {
     position: absolute;
     height: 100%;
     width: 0;
@@ -730,6 +743,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     transition: 0.5s;
 }
 
+.project-skills{
+    text-align: center;
+    color: #AF9483;
+    font-weight: 400;
+    font-size: small;
+}
 
 
 /* ============================= */
@@ -818,11 +837,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     transition: all 0.3s ease-in-out;
 }
 
-.portfolio #portfolio-flters li:hover,
+/* .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
     background: #AF9483;
-    color: #ffffff;
-}
+    color: #ffffff; */
+/* } */
 
 .portfolio #portfolio-flters li:last-child {
     margin-right: 0;
