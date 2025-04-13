@@ -71,8 +71,8 @@ h6 {
     display: table;
     position: relative;
     width: 100%;
-    height: 100vh;
-    color: #ffffff;
+    height: 80vh;
+    color: #000000;
 }
 
 .top-header:after {
@@ -82,11 +82,11 @@ h6 {
     height: 100%;
     left: 0;
     top: 0;
-    background: url(../img/top-header.jpg) left top repeat;
+    background: url(../img/coffee.jpg) left top repeat;
     background-size: cover;
     background-position: center center;
-    filter: blur(8px);
-    -webkit-filter: blur(8px);
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
     z-index: -1;
 }
 
@@ -100,8 +100,8 @@ h6 {
 
 .top-header h1 {
     font-size: 5vw;
-    font-weight: 700;
-    color: #ffffff;
+    font-weight: 400;
+    color: #000000;
 }
 
 .top-header p {
@@ -114,7 +114,7 @@ h6 {
     height: 40px;
     font-size: 3vw;
     font-weight: 400;
-    color: #ffffff;
+    color: #010000;
 }
 
 .top-header .typed-cursor {
