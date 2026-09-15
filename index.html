@@ -194,6 +194,7 @@
                             <li><i class="fa fa-check-circle mr-4 ml-4"></i>Turbot</li>
                             <li><i class="fa fa-check-circle mr-4 ml-4"></i>OAuth 2.0</li>
                             <li><i class="fa fa-check-circle mr-4 ml-4"></i>Pulumi</li>
+                            <li><i class="fa fa-check-circle mr-4 ml-4"></i>Agentic AI (MCP, LLM Agent, Prompt Engineering)</li>
                         </ul>
                     </div>
                 </div>
@@ -217,32 +218,14 @@
                             <div class="subtitle">Sunnyvale, CA</div>
                             <div class="descr">
                                 <ul style="text-align:left">
-                                    <li>Redesigned and centralized the delivery of ETA and vehicle information during
-                                        the ride request flow, deprecating fragmented
-                                        and inconsistent legacy implementation to improve data consistency and reduce
-                                        payload size by 60%. </li>
-                                    <li>Refined AV rider experience by improving the reliability and accuracy of key
-                                        trip flows and in-app actions across Autonomous
-                                        Mobility and Delivery (AM&D).</li>
-                                    <li>Led the design and development of client-side local evaluation for A/B testing
-                                        and
-                                        feature rollout framework, onboarding it to a core rider service, eliminating
-                                        dependency on network calls for feature gating and configuration.
-                                    </li>
-                                    <li>Delivered 100x latency improvement (from ~10ms to ~100µs), enhanced service
-                                        reliability and reduced CPU/network overhead by decoupling feature evaluation
-                                        from
-                                        backend APIs, significantly boosting performance.
-                                    </li>
-                                    <li>Engineered the migration of top 5 highest-QPS endpoints (~99.6% of traffic) from
-                                        Node.js to Go, aligning with 3.0 architecture standards, reducing P99 latencies
-                                        by
-                                        74%, significantly lowering compute costs and server errors.
-                                    </li>
-                                    <li>Developed "Cancel Ride" feature for AV trips, allowing support agents to end
-                                        rides
-                                        on users' behalf and enhance responsiveness.
-                                    </li>
+                                    <li>Redesigned multi-grant payment modeling from order-level to job-level architecture on Unified Checkout, enabling multiple payment grants per order for accurate incremental fare charging on trip edits, approximately saving $4.6M annually in fraudulent charges and reduced rider friction from unnecessary high-fare declines.</li>
+                                    <li>Engineered zero-result response caching for ETA and supplies data, reducing 40% downstream service calls and saving ~$1M annually in infrastructure cost while improving system stability under high-demand low-supply conditions.</li>
+                                    <li>Implemented the ride booking product selection layer end-to-end, migrating off a legacy fragmented framework to a standalone Java service, streamlining the backend that powers product display, pricing & personalization for millions of ride requests daily.</li>
+                                    <li>Integrated real-time fare estimation via low-latency RPC, eliminating redundant API calls and reducing payload size by 60%, improving request efficiency and product-selection performance.</li>
+                                    <li>Delivered 100x latency improvement (from ~10 ms to ~100µs), enhanced service reliability and reduced CPU/network overhead by decoupling feature evaluation from backend APIs, significantly boosting performance.</li>
+                                    <li>Led the design and development of client-side local evaluation for A/B testing and feature rollout framework, onboarding it to a core rider service, eliminating dependency on network calls for feature gating and configuration.</li>
+                                    <li>Migrated high-QPS endpoints (~99.6% traffic) from Node.js to GoLang, improving p99 latency by 74% in a distributed system architecture while significantly lowering compute costs and server errors.</li>
+                                    <li>Developed “Cancel Ride” feature for autonomous vehicle trips, enabling support agents to end rides and enhance responsiveness.</li>
                                 </ul>
                             </div>
                         </li>
@@ -253,19 +236,9 @@
                             <!-- <div class="subtitle" style="margin-top: 1px;"> Greensboro, NC, USA </div> -->
                             <div class="descr">
                                 <ul style="text-align:left">
-                                    <li>Leveraged Pulumi IaC to configure 300+ users, streamline access & manage S3 data
-                                        across organization improving efficiency.
-                                    </li>
-                                    <li>Implemented CI/CD pipeline with Flux on Kubernetes, automating deployments and
-                                        integrating monitoring stack, resulting in
-                                        increased deployment speed and enhanced system reliability.
-                                    </li>
-                                    <li>Enhanced working visibility by developing cross-cloud monitoring pipeline
-                                        utilizing AWS, Turbot StreamPipe / PowerPipe.
-                                    </li>
-                                    <li>Improved efficiency and reliability with customized dashboards and alert
-                                        systems, enabling proactive issue detection and resolution.
-                                    </li>
+                                    <li>Leveraged Pulumi IaC to configure 300+ users, streamline access & manage S3 data across organization improving efficiency.</li>
+                                    <li>Implemented Flux-based Kubernetes CI/CD pipelines and cross-cloud monitoring using AWS, Turbot StreamPipe, and Prometheus, automating deployments that improved system reliability by 40% and reduced operational overhead by 30%.</li>
+                                    <li>Improved efficiency & reliability with customized dashboards & alert systems, enabling proactive issue detection and resolution.</li>
                                 </ul>
                             </div>
                         </li>
